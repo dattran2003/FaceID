@@ -45,4 +45,4 @@ def get_identity_info(config: Config):
     verified_identities = df_identities.iloc[face_ids].copy()
     verified_identities['similarity'] = face_sims.numpy()
 
-    return df_identities
+    return verified_identities
